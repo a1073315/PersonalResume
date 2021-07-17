@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *::before, *::after{
+	box-sizing:border-box;
+}
+
+img{
+	display: block;
+}
+
+$font-s:20px;
+$font-b:24px;
+
+$black:#000;
+$white:#fff;
+$blue: #415165;
+$red:#A00404;
+$m-b: 57px;
+
+
+body{
+    font-size: $font-b;
+    line-height: 1.5;
+    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif;
+}
+h1,h2{
+    line-height: 1.2;
+}
+.title{
+    border-bottom: 1px solid $black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    h2{
+        font-size: 32px;
+        span{
+              font-size: $font-b;
+              color: $red;
+              margin-left: 8px;
+              vertical-align: 10%;
+        }
+    }
+
+}
+
+
+.center{
+    display: flex;
+    margin: 0 auto;
+}
+.font-20{
+    font-size: $font-s;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.header{
+    border-bottom: 2px solid $black;
+    h1{
+        font-size: 80px;
+        margin-top: 37px;
+    }
+    margin-bottom: 50px;
+}
+.photo{
+    width: 324px;
+    background: transparent ;
+    margin-bottom: 50px;
+}
+
+
+.profile{
+    margin-bottom: $m-b;
+    .profile-name, .profile-profession{
+        margin-bottom: 15px;
+    }
+}
+
+.education{
+    margin-bottom: $m-b;
+    .education-school{
+        li{
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+
+.skill{
+    margin-bottom: $m-b;
+    color: $white;
+    background-color: $blue;
+    padding: 24px 50px 36px 50px;
+    .title{
+        border-bottom: 1px solid $white;
+        max-width:996px;
+        text-align:center;
+        margin: 0 auto;
+        span{
+            color: $white;
+        }
+    }
+    .skill-software{
+        width: 215px;
+        margin: 36px auto 0;
+        li{
+            line-height: 1;
+            border-left: 1px solid #96A9C4;
+            padding-left: 20px;
+            padding-bottom: 16px;
+        }
+        .bottom{
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+.work{
+    margin-bottom: $m-b;
+    .work-list{
+        margin: 15px 0;
+        padding-left: 24px;
+        li{
+            border-left: 1px solid #96A9C4;
+            padding-left: 24px;
+            padding-bottom: 24px;
+            img{
+                width: 90px;
+                margin: 8px;
+            }
+
+        }
+        .bottom{
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+.contact{
+    text-align: center;
+    color: $white;
+    background-color: $blue;
+    padding: 24px 0 12px 0;
+    .title{
+        border-bottom: 1px solid $white;
+        padding-bottom: 10px;
+        span{
+            color: $white;
+        }
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        &:hover{
+            color: rgb(124, 207, 255);
+        }
+    }
+    .contact-detail{
+        li{
+            a{
+                line-height: 1.75;
+                margin-bottom: 15px;
+            }
+        }
+        .social-media{
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+            a{
+                line-height: 1;
+                margin: 0 12px;
+            }
+        }
+    }
+}
